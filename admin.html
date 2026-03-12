@@ -888,7 +888,7 @@
     /* Rich editor */
     .rte-wrap{border:1.5px solid var(--border);border-radius:6px;overflow:hidden;}
     .rte-toolbar{display:flex;flex-wrap:wrap;gap:2px;padding:5px 7px;background:#f7f4ef;border-bottom:1px solid var(--border);align-items:center;}
-    .rte-toolbar button{border:none;background:transparent;border-radius:4px;cursor:pointer;font-size:.76rem;font-family:var(--font);color:var(--text);padding:3px 7px;transition:background .12s;line-height:1.2;min-width:26px;}.rte-toolbar button:hover{background:rgba(138,106,26,.12);}
+    .rte-toolbar button{border:none;background:transparent;border-radius:4px;cursor:pointer;font-size:.72rem;font-family:var(--font);color:var(--text);padding:4px 9px;transition:background .12s;line-height:1.2;white-space:nowrap;}.rte-toolbar button:hover{background:rgba(138,106,26,.12);}
     .rte-sep{width:1px;height:18px;background:var(--border);margin:0 3px;flex-shrink:0;}
     .rte-sel{border:1px solid var(--border);background:#faf8f5;border-radius:4px;font-family:var(--font);font-size:.72rem;color:var(--text);padding:2px 5px;cursor:pointer;outline:none;max-width:105px;}
     .rich-editor{min-height:240px;max-height:480px;overflow-y:auto;padding:12px 14px;outline:none;font-family:var(--font);font-size:.92rem;line-height:1.8;color:var(--text);background:#fff;}
@@ -901,6 +901,8 @@
     .rich-editor ul,.rich-editor ol{padding-left:22px;margin:8px 0;}
     .rich-editor a{color:var(--gold);text-decoration:underline;}
     .rich-editor img{max-width:100%;border-radius:6px;margin:8px 0;}
+    .rich-editor video{max-width:100%;border-radius:8px;margin:8px 0;}
+    .rich-editor iframe{max-width:100%;border-radius:8px;}
 
     /* Toast */
     .toast{position:fixed;bottom:22px;right:22px;background:#1a1628;color:#f0ece4;padding:10px 20px;border-radius:8px;font-size:.76rem;z-index:999;opacity:0;transform:translateY(8px);transition:all .22s;pointer-events:none;}
@@ -952,11 +954,16 @@
                 <button onclick="rte('insertUnorderedList',null,'tr_richEditor')">•</button>
                 <button onclick="rte('insertOrderedList',null,'tr_richEditor')">1.</button>
                 <div class="rte-sep"></div>
-                <button onclick="rteLink('tr_richEditor')">🔗</button>
-                <button onclick="rteImage('tr_richEditor')">🖼</button>
-                <button onclick="document.getElementById('tr_rteFile').click()">📤</button>
-                <button onclick="rte('removeFormat',null,'tr_richEditor')" style="color:#e53e3e;">✕</button>
+                <button onclick="rteLink('tr_richEditor')">Link</button>
+                <button onclick="rteImage('tr_richEditor')">Resim URL</button>
+                <button onclick="document.getElementById('tr_rteFile').click()">Resim Yükle</button>
+                <div class="rte-sep"></div>
+                <button onclick="rteVideo('tr_richEditor')">Video URL</button>
+                <button onclick="document.getElementById('tr_rteVideoFile').click()">Video Yükle</button>
+                <div class="rte-sep"></div>
+                <button onclick="rte('removeFormat',null,'tr_richEditor')" style="color:#e53e3e;">Temizle</button>
                 <input type="file" id="tr_rteFile" accept="image/*" style="display:none" onchange="rteUpload(this,'tr_richEditor')" />
+                <input type="file" id="tr_rteVideoFile" accept="video/*" style="display:none" onchange="rteUploadVideo(this,'tr_richEditor')" />
               </div>
               <div id="tr_richEditor" class="rich-editor" contenteditable="true" spellcheck="false"></div>
             </div>
@@ -987,11 +994,16 @@
                 <button onclick="rte('insertUnorderedList',null,'en_richEditor')">•</button>
                 <button onclick="rte('insertOrderedList',null,'en_richEditor')">1.</button>
                 <div class="rte-sep"></div>
-                <button onclick="rteLink('en_richEditor')">🔗</button>
-                <button onclick="rteImage('en_richEditor')">🖼</button>
-                <button onclick="document.getElementById('en_rteFile').click()">📤</button>
-                <button onclick="rte('removeFormat',null,'en_richEditor')" style="color:#e53e3e;">✕</button>
+                <button onclick="rteLink('en_richEditor')">Link</button>
+                <button onclick="rteImage('en_richEditor')">Image URL</button>
+                <button onclick="document.getElementById('en_rteFile').click()">Upload Image</button>
+                <div class="rte-sep"></div>
+                <button onclick="rteVideo('en_richEditor')">Video URL</button>
+                <button onclick="document.getElementById('en_rteVideoFile').click()">Upload Video</button>
+                <div class="rte-sep"></div>
+                <button onclick="rte('removeFormat',null,'en_richEditor')" style="color:#e53e3e;">Clear</button>
                 <input type="file" id="en_rteFile" accept="image/*" style="display:none" onchange="rteUpload(this,'en_richEditor')" />
+                <input type="file" id="en_rteVideoFile" accept="video/*" style="display:none" onchange="rteUploadVideo(this,'en_richEditor')" />
               </div>
               <div id="en_richEditor" class="rich-editor" contenteditable="true" spellcheck="false"></div>
             </div>
@@ -1298,12 +1310,63 @@
   function rte(cmd,val,edId){const ed=document.getElementById(edId);if(!ed)return;ed.focus();document.execCommand(cmd,false,val||null);}
   function rteLink(edId){const u=prompt('URL:','https://');if(u)rte('createLink',u,edId);}
   function rteImage(edId){const u=prompt('Image URL:','https://');if(u)rte('insertImage',u,edId);}
+  function rteVideo(edId){
+    const u=prompt('Video URL (YouTube, Vimeo):','https://');
+    if(!u)return;
+    const ed=document.getElementById(edId);if(!ed)return;
+    let embedUrl='';
+    // YouTube
+    if(u.includes('youtube.com')||u.includes('youtu.be')){
+      const videoId=u.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+      if(videoId)embedUrl='https://www.youtube.com/embed/'+videoId[1];
+    }
+    // Vimeo
+    else if(u.includes('vimeo.com')){
+      const videoId=u.match(/vimeo\.com\/(\d+)/);
+      if(videoId)embedUrl='https://player.vimeo.com/video/'+videoId[1];
+    }
+    if(embedUrl){
+      const iframe='<div style="position:relative;padding-bottom:56.25%;height:0;margin:16px 0;"><iframe src="'+embedUrl+'" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:8px;" allowfullscreen></iframe></div>';
+      ed.focus();
+      document.execCommand('insertHTML',false,iframe);
+    }else{
+      alert('Geçersiz video URL. YouTube veya Vimeo linki kullanın.');
+    }
+  }
   async function rteUpload(input,edId){
     const file=input.files[0];if(!file)return;
     if(typeof window._upload!=='function'){alert('Upload hazır değil.');return;}
     try{const url=await window._upload(file);const ed=document.getElementById(edId);if(ed){ed.focus();document.execCommand('insertImage',false,url);}}
     catch(e){alert('Yüklenemedi: '+e.message);}
     input.value='';
+  }
+  async function rteUploadVideo(input,edId){
+    const file=input.files[0];if(!file)return;
+    if(!file.type.startsWith('video/')){alert('Lütfen video dosyası seçin.');input.value='';return;}
+    if(typeof window._upload!=='function'){alert('Upload hazır değil.');input.value='';return;}
+    const btn=document.querySelector(`[onclick*="${input.id}"]`);
+    if(btn){btn.textContent='⏳';btn.disabled=true;}
+    try{
+      const fd=new FormData();
+      fd.append('file',file);
+      fd.append('upload_preset','ml_default');
+      fd.append('resource_type','video');
+      const r=await fetch('https://api.cloudinary.com/v1_1/dognk1md5/video/upload',{method:'POST',body:fd});
+      const d=await r.json();
+      if(!d.secure_url)throw new Error(d.error?.message||'Video yüklenemedi');
+      const ed=document.getElementById(edId);
+      if(ed){
+        const videoHtml='<div style="margin:16px 0;"><video controls style="max-width:100%;border-radius:8px;"><source src="'+d.secure_url+'" type="'+file.type+'">Tarayıcınız video oynatmayı desteklemiyor.</video></div>';
+        ed.focus();
+        document.execCommand('insertHTML',false,videoHtml);
+      }
+      toast('Video yüklendi');
+    }catch(e){
+      alert('Video yüklenemedi: '+e.message);
+    }finally{
+      if(btn){btn.textContent='🎥';btn.disabled=false;}
+      input.value='';
+    }
   }
   document.addEventListener('DOMContentLoaded',()=>{
     ['tr_richEditor','en_richEditor'].forEach(id=>{
