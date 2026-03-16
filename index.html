@@ -302,28 +302,7 @@
       if (d.heroTitle)   setHtml(".hero-title",   d.heroTitle);
       if (d.heroSubtitle) setText(".hero-subtitle", d.heroSubtitle);
 
-      if (d.aboutName)  setText(".profile-name",  d.aboutName);
-      if (d.aboutTitle) setText(".profile-title",  d.aboutTitle);
 
-      if (d.certItems && Array.isArray(d.certItems) && d.certItems.length > 0) {
-        const certList = document.querySelector(".cert-list");
-        if (certList) {
-          certList.innerHTML = d.certItems.map(item =>
-            '<li><span class="cert-icon" aria-hidden="true">' + (item.icon || '✦') + '</span>' + (item.text || '') + '</li>'
-          ).join('');
-        }
-      }
-      if (d.profilePhoto && d.profilePhoto.trim()) {
-        const pp = document.querySelector(".profile-photo");
-        if (pp) {
-          pp.innerHTML = '<img src="' + d.profilePhoto + '" alt="Profil Fotoğrafı" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">';
-          pp.style.opacity = "1";
-        }
-      }
-      if (d.aboutQuote) setText(".about-quote", d.aboutQuote);
-      const aboutTexts = document.querySelectorAll(".about-text");
-      if (d.aboutText1 && aboutTexts[0]) aboutTexts[0].innerHTML = d.aboutText1;
-      if (d.aboutText2 && aboutTexts[1]) aboutTexts[1].innerHTML = d.aboutText2;
 
       const nums   = document.querySelectorAll(".stat-number");
       const labels = document.querySelectorAll(".stat-label");
@@ -1231,19 +1210,55 @@
             <li><span class="cert-icon" aria-hidden="true">✦</span>10+ Yıl Uygulayıcı Deneyimi</li>
           </ul>
         </aside>
-        <div class="about-content">
-          <div class="reveal">
-            <span class="section-label">Hakkımda</span>
-            <h2 class="section-title" id="hakkimda-title">Kendi Hikâyemden <span>Doğan Bir Yol</span></h2>
-            <div class="divider"></div>
-          </div>
-          <p class="about-text reveal">Hayatımın en zorlu dönemlerinde <strong>bilinçaltının şifa gücüyle</strong> tanıştım. On yılı aşkın süredir QHHT seansları ve astrolojik danışmanlık ile insanların ruhsal yolculuklarına eşlik ediyorum.</p>
-          <blockquote class="about-quote reveal">"Her bilinç biriciktir; yıldız haritanız sizin ruhsal parmak izinizdir."</blockquote>
-          <p class="about-text reveal">Dolores Cannon metodolojisini <strong>derinlemesine öğrenerek</strong> QHHT Level II sertifikasını tamamladım. Batı ve Vedik astroloji geleneklerini harmanlayan bütüncül bir yaklaşımla çalışıyorum. Her seans ve her harita analizi, danışanımın <strong>özgün ruhsal yolunu</strong> ortaya çıkarmak için titizlikle hazırlanır.</p>
+<div class="about-content">
+  <div class="reveal">
+    <span class="section-label">Hakkımızda</span>
+    <h2 class="section-title" id="hakkimda-title">
+      Vizyonumuz: <span>Rehbersiz Rehberlik</span>
+    </h2>
+    <div class="divider"></div>
+  </div>
 
-          <div class="reveal" style="margin-top: 8px;">
-            <a href="hakkimda.html" class="section-more-btn">✦ Daha Fazlası →</a>
-          </div>
+  <p class="about-text reveal">
+    Büyük önder Mustafa Kemal Atatürk'ün de ömrünün son yıllarında 
+    incelediği kadim ezoterik uygarlık <strong>Mu'nun bilgeleri</strong>, 
+    öğretmek için konuşmazdı; sadece <strong>hatırlatırdı.</strong> 
+    Çünkü hakikat, dışarıdan öğrenilmezdi. O, zaten içimizdeydi. 
+    Çünkü bilge yolu bilen değil; 
+    <strong>yolun bireyin içinde olduğunu bilen kişidir.</strong>
+  </p>
+
+  <p class="about-text reveal">
+    Günümüzde temel sorun bilgi eksikliği değil 
+    <strong>bilinç dağınıklığıdır.</strong> 
+    Danışmanlık hizmetlerimizle amacımız bireylere çözüm sunmak değil, 
+    <strong>rehbersiz rehberlik</strong> kavramını merkeze alarak 
+    algının genişlemesine aracı olmaktır. Çözüm bilinç genişlediğinde 
+    kendiliğinden ortaya çıkacaktır.
+  </p>
+
+  <blockquote class="about-quote reveal">
+    "Rehbersiz rehberlik" kavramı, bireyin dışsal bir otoriteye ya da 
+    öğreticiye ihtiyaç duymaksızın kendi içsel ışığının farkına varmasını 
+    ifade eder. Zira dışsal otoritenin az olduğu bir düzende, birey kendi 
+    kararlarının sonuçlarını daha net görür ve sorumluluk bilinci güçlenir. 
+    Bu kavram bağımlı bireyler yerine 
+    <strong>bilinçli ve sorumluluk sahibi bireyleri</strong> ön plana çıkarır.
+  </blockquote>
+
+  <p class="about-text reveal">
+    Danışmanlık yaklaşımımızla net cevaplar vermekten kaçınır, bireyin 
+    kendi çözümünü bulmasını teşvik eder. Zihni değil 
+    <strong>farkındalığı</strong> hedef alır, bağımlılık değil 
+    <strong>özgürlüğü</strong> cesaretlendiririz. Bu yaklaşım; liderlik, 
+    ebeveynlik ve toplumsal gelişim süreçlerinde de uygulanabilir bir 
+    <strong>bilinç modeli</strong> sunar.
+  </p>
+
+  <div class="reveal" style="margin-top: 8px;">
+    <a href="hakkimda.html" class="section-more-btn">✦ Daha Fazlası →</a>
+  </div>
+</div>
         </div>
       </div>
     </div>
