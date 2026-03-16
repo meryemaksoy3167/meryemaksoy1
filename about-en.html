@@ -234,7 +234,7 @@
     .cert-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .cert-list li {
       display: flex; align-items: center; gap: 12px;
-      font-family: var(--font-sans); font-size: 1.2rem; font-weight: 300;
+      font-family: var(--font-sans); font-size: 0.82rem; font-weight: 300;
       color: var(--white-dim); padding: 10px 14px;
       background: rgba(30,24,16,0.05);
       border: 1px solid rgba(160,120,40,0.12); border-radius: var(--radius-md);
@@ -245,17 +245,38 @@
     /* STORY BODY */
     .story-body { display: flex; flex-direction: column; gap: 28px; }
     .story-text {
-      font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300;
+      font-family: var(--font-serif); font-size: 1.1rem; font-weight: 300;
       color: var(--white-dim); line-height: 1.95;
     }
     .story-text strong { color: var(--gold-light); font-weight: 400; }
     .story-quote {
-      border-left: 2px solid var(--gold); padding: 20px 28px;
+      border-left: 3px solid var(--gold); padding: 24px 28px;
       background: rgba(160,120,40,0.06);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      font-family: var(--font-serif); font-size: 1.3rem; font-style: italic;
-      color: var(--gold); line-height: 1.7;
+      font-family: var(--font-serif); font-size: 1.2rem; font-style: italic;
+      color: var(--gold-light); line-height: 1.8;
     }
+
+    /* APPROACH LIST */
+    .approach-list {
+      list-style: none;
+      margin: 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .approach-list li {
+      padding: 18px 24px;
+      background: rgba(160,120,40,0.05);
+      border-left: 2px solid var(--gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.75;
+    }
+    .approach-list li strong { color: var(--gold-light); font-weight: 400; }
 
     /* TIMELINE */
     .timeline-section { margin-bottom: 90px; }
@@ -387,9 +408,9 @@
 
 <div class="page-hero">
   <div style="position:relative;z-index:1;">
-    <div class="page-hero-eyebrow">My Story</div>
-    <h1 class="page-hero-title">A Mission Born From<br><span>My Own Journey</span></h1>
-    <p class="page-hero-sub">Deep research and personal transformation processes shaping a journey of guidance.</p>
+    <div class="page-hero-eyebrow">Our Vision</div>
+    <h1 class="page-hero-title">Guidance Without a <span>Guide</span></h1>
+    <p class="page-hero-sub">An approach designed for individuals to discover their own inner light and become the architects of their conscious, responsible lives.</p>
   </div>
   <span class="hero-deco">✦</span>
 </div>
@@ -415,68 +436,51 @@
 
     <div class="story-body reveal">
       <div>
-        <span class="section-label">My Starting Point</span>
-        <h2 class="section-title">A Story of <span>Transformation</span></h2>
+        <span class="section-label">About Us - Our Vision</span>
+        <h2 class="section-title">Guidance Without a <span>Guide</span></h2>
         <div class="divider"></div>
       </div>
 
-<p class="story-text">
-  During the most challenging periods of my life, I encountered <strong>the healing power of the subconscious mind</strong>. For a long time, I have been accompanying people on their spiritual journeys through QHHT sessions and astrological consultations.
-</p>
+      <p class="story-text">
+        The sages of Mu—the ancient esoteric civilization that even the great leader Mustafa Kemal Atatürk studied in his final years—<strong>did not speak to teach; they merely reminded</strong>. Truth could not be learned from outside sources. It already existed within us. For a true sage is not one who knows the path, but one who understands that the path exists within each individual.
+      </p>
+
+      <p class="story-text">
+        Today's fundamental problem is not a lack of knowledge, but <strong>scattered consciousness</strong>. Through our consulting services, our aim is not to provide individuals with solutions, but rather to center the concept of "guidance without a guide" and serve as a catalyst for expanding perception. Solutions will naturally emerge when consciousness expands.
+      </p>
 
       <blockquote class="story-quote">
-        "Every consciousness is unique."
+        "Guidance without a guide" refers to an individual awakening to their own inner light without relying on external authority or a teacher.
       </blockquote>
 
       <p class="story-text">
-        By deeply studying the Dolores Cannon methodology, I completed my <strong>QHHT Level I certificate</strong>. I aim for a holistic approach that blends QHHT healing techniques with astrological traditions.
+        In a system where external authority is minimal, individuals more clearly perceive the consequences of their own decisions, and their sense of responsibility strengthens. This concept places consciously aware and responsible individuals at the forefront, rather than dependent ones.
       </p>
-    </div>
-  </div>
 
-  <!-- VALUES -->
-  <div class="reveal">
-    <span class="section-label">My Working Philosophy</span>
-    <h2 class="section-title">What <span>Matters</span> to Me</h2>
-    <div class="divider"></div>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">🌿</span>
-        <h3 class="value-title">Safe Space</h3>
-        <p class="value-desc">Creating a non-judgmental, warm, and safe environment for every client is my top priority. The more safe one feels in the session room, the deeper the inner journey becomes.</p>
+      <p class="story-text">
+        Guidance without a guide is a simple yet powerful approach that encourages people to trust their own inner source of wisdom. It holds significant potential for both personal development and social harmony. In the fast-paced rhythm of the modern world, the inner balance and awareness this understanding provides can help individuals better understand themselves and live more consciously.
+      </p>
+
+      <div style="margin-top: 36px;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 400; color: var(--white); margin-bottom: 20px;">Our Consulting Approach</h3>
+        <ul class="approach-list">
+          <li><strong>We avoid giving direct answers;</strong> instead, we encourage individuals to discover their own solutions</li>
+          <li><strong>We help individuals look inward rather than outward</strong> through questions that activate consciousness</li>
+          <li><strong>We target awareness, not the intellect</strong></li>
+          <li><strong>We encourage freedom, not dependence</strong></li>
+        </ul>
       </div>
-      <div class="value-card">
-        <span class="value-icon">🎯</span>
-        <h3 class="value-title">Client-Centered Approach</h3>
-        <p class="value-desc">Every session and every analysis is shaped according to your unique spiritual path. There is no one-size-fits-all approach; each consciousness is addressed at its own distinct depth.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">✨</span>
-        <h3 class="value-title">Integrated Approach</h3>
-        <p class="value-desc">By using QHHT and astrology together, I integrate the spiritual, mental, and energetic dimensions. When the pieces come together, the picture becomes clear.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">📚</span>
-        <h3 class="value-title">Continuous Learning</h3>
-        <p class="value-desc">Standing still in this field is not possible. New research, different traditions, and every new client teach me something new each time.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🌍</span>
-        <h3 class="value-title">Universal Connection</h3>
-        <p class="value-desc">I believe every person is part of a greater whole. Working with this awareness fundamentally affects the quality of each session.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤝</span>
-        <h3 class="value-title">Confidentiality & Ethics</h3>
-        <p class="value-desc">Every piece of information shared is kept strictly confidential. The privacy and trust of clients comes before everything else.</p>
-      </div>
+
+      <p class="story-text" style="margin-top: 28px;">
+        This approach is applicable not only in consulting but also in <strong>leadership, parenting, and social development processes</strong>—offering a consciousness model that can be implemented broadly. An individual who discovers their own inner light gains the capacity to view the world through that same light.
+      </p>
     </div>
   </div>
 
   <!-- CTA -->
   <div class="page-cta reveal">
-    <h2 class="page-cta-title">Let's Begin Your<br><span>Spiritual Journey Together</span></h2>
-    <p>For your questions or appointment requests, feel free to get in touch with me.</p>
+    <h2 class="page-cta-title">Ready to Begin Your<br><span>Inner Journey?</span></h2>
+    <p>Feel free to reach out with your questions or appointment requests.</p>
     <a href="indexen.html#contact" class="btn-primary">✦ Book an Appointment</a>
   </div>
 
