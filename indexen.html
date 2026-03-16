@@ -138,28 +138,6 @@
       if (d.heroTitle)    setHtml(".hero-title",     d.heroTitle);
       if (d.heroSubtitle) setText(".hero-subtitle",  d.heroSubtitle);
 
-      if (d.aboutName)  setText(".profile-name",  d.aboutName);
-      if (d.aboutTitle) setText(".profile-title", d.aboutTitle);
-
-      if (d.certItems && Array.isArray(d.certItems) && d.certItems.length > 0) {
-        const certList = document.querySelector(".cert-list");
-        if (certList) {
-          certList.innerHTML = d.certItems.map(item =>
-            '<li><span class="cert-icon" aria-hidden="true">' + (item.icon || '✦') + '</span>' + (item.text || '') + '</li>'
-          ).join('');
-        }
-      }
-      if (d.profilePhoto && d.profilePhoto.trim()) {
-        const pp = document.querySelector(".profile-photo");
-        if (pp) {
-          pp.innerHTML = '<img src="' + d.profilePhoto + '" alt="Profile Photo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">';
-          pp.style.opacity = "1";
-        }
-      }
-      if (d.aboutQuote) setText(".about-quote", d.aboutQuote);
-      const aboutTexts = document.querySelectorAll(".about-text");
-      if (d.aboutText1 && aboutTexts[0]) aboutTexts[0].innerHTML = d.aboutText1;
-      if (d.aboutText2 && aboutTexts[1]) aboutTexts[1].innerHTML = d.aboutText2;
 
       const nums   = document.querySelectorAll(".stat-number");
       const labels = document.querySelectorAll(".stat-label");
@@ -1198,18 +1176,59 @@
             <li><span class="cert-icon" aria-hidden="true">✦</span>10+ Years of Practitioner Experience</li>
           </ul>
         </aside>
-        <div class="about-content">
-          <div class="reveal">
-            <span class="section-label">About Me</span>
-            <h2 class="section-title" id="about-title">A Path Born From <span>My Own Story</span></h2>
-            <div class="divider"></div>
-          </div>
-          <p class="about-text reveal">During the most challenging period of my life, I discovered <strong>the healing power of the subconscious mind.</strong> For over a decade I have been guiding people through their spiritual journeys with QHHT sessions and astrological consultations.</p>
-          <blockquote class="about-quote reveal">"Every consciousness is unique; your star chart is your soul's fingerprint."</blockquote>
-          <p class="about-text reveal">I completed the QHHT Level II certification after <strong>deeply studying</strong> Dolores Cannon's methodology. I work with a holistic approach that blends Western and Vedic astrological traditions. Each session and chart reading is meticulously prepared to illuminate the <strong>unique spiritual path</strong> of my client.</p>
-          <div class="reveal" style="margin-top:8px;">
-            <a href="about-en.html" class="section-more-btn">✦ Learn More →</a>
-          </div>
+<div class="about-content">
+  <div class="reveal">
+    <span class="section-label">About Us</span>
+    <h2 class="section-title" id="hakkimda-title">
+      Our Vision: <span>Guidance Without a Guide</span>
+    </h2>
+    <div class="divider"></div>
+  </div>
+
+  <p class="about-text reveal">
+    The sages of <strong>Mu</strong> — the ancient esoteric civilisation 
+    that even the great Mustafa Kemal Atatürk studied in the final years 
+    of his life — never spoke to teach; they only 
+    <strong>reminded.</strong> Because truth could not be learned from 
+    the outside. It was already within us. For the wise are not those 
+    who know the way, but those who know that 
+    <strong>the way lies within the individual.</strong>
+  </p>
+
+  <p class="about-text reveal">
+    Today, the fundamental problem is not a lack of information but 
+    <strong>scattered consciousness.</strong> Through our consultancy 
+    services, our aim is not to provide solutions to individuals, but 
+    to act as a facilitator for the expansion of perception by placing 
+    the concept of <strong>guidance without a guide</strong> at the 
+    centre of our work. The solution will emerge naturally once 
+    consciousness expands.
+  </p>
+
+  <blockquote class="about-quote reveal">
+    "Guidance without a guide" refers to the individual becoming aware 
+    of their own inner light without the need for an external authority 
+    or teacher. In a system where external authority is minimal, 
+    individuals see the consequences of their own decisions more clearly 
+    and their sense of responsibility strengthens. This concept brings 
+    <strong>conscious, responsible individuals</strong> to the fore 
+    rather than dependent ones.
+  </blockquote>
+
+  <p class="about-text reveal">
+    Through our consultancy approach, we avoid giving definitive answers 
+    and encourage individuals to find their own solutions. We target 
+    <strong>awareness</strong> rather than the mind, and we encourage 
+    <strong>freedom</strong> rather than dependency. This approach offers 
+    an applicable <strong>consciousness model</strong> not only in 
+    personal development, but also in leadership, parenting and 
+    social development processes.
+  </p>
+
+  <div class="reveal" style="margin-top: 8px;">
+    <a href="about.html" class="section-more-btn">✦ Learn More →</a>
+  </div>
+</div>
         </div>
       </div>
     </div>
