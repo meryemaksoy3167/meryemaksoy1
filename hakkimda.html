@@ -245,17 +245,38 @@
     /* STORY BODY */
     .story-body { display: flex; flex-direction: column; gap: 28px; }
     .story-text {
-      font-family: var(--font-serif); font-size: 1.25rem; font-weight: 300;
+      font-family: var(--font-serif); font-size: 1.1rem; font-weight: 300;
       color: var(--white-dim); line-height: 1.95;
     }
     .story-text strong { color: var(--gold-light); font-weight: 400; }
     .story-quote {
-      border-left: 2px solid var(--gold); padding: 20px 28px;
+      border-left: 3px solid var(--gold); padding: 24px 28px;
       background: rgba(160,120,40,0.06);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      font-family: var(--font-serif); font-size: 1.3rem; font-style: italic;
-      color: var(--gold); line-height: 1.7;
+      font-family: var(--font-serif); font-size: 1.2rem; font-style: italic;
+      color: var(--gold-light); line-height: 1.8;
     }
+
+    /* APPROACH LIST */
+    .approach-list {
+      list-style: none;
+      margin: 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .approach-list li {
+      padding: 18px 24px;
+      background: rgba(160,120,40,0.05);
+      border-left: 2px solid var(--gold);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      line-height: 1.75;
+    }
+    .approach-list li strong { color: var(--gold-light); font-weight: 400; }
 
     /* TIMELINE EĞİTİM */
     .timeline-section { margin-bottom: 90px; }
@@ -387,9 +408,9 @@
 
 <div class="page-hero">
   <div style="position:relative;z-index:1;">
-    <div class="page-hero-eyebrow">Hikâyem</div>
-    <h1 class="page-hero-title">Kendi Yolculuğumdan<br><span>Doğan Bir Misyon</span></h1>
-    <p class="page-hero-sub">Derin araştırmalar ve kişisel dönüşüm süreçleriyle şekillenen bir rehberlik yolculuğu.</p>
+    <div class="page-hero-eyebrow">Vizyonumuz</div>
+    <h1 class="page-hero-title">Rehbersiz <span>Rehberlik</span></h1>
+    <p class="page-hero-sub">Bireyin kendi içsel ışığının farkına varması ve bilinçli sorumluluk sahibi yaşamının kurucusu olması için tasarlanan bir yaklaşım.</p>
   </div>
   <span class="hero-deco">✦</span>
 </div>
@@ -415,67 +436,50 @@
 
     <div class="story-body reveal">
       <div>
-        <span class="section-label">Başlangıç Noktam</span>
-        <h2 class="section-title">Bir <span>Dönüşümün</span> Hikâyesi</h2>
+        <span class="section-label">Hakkımızda - Vizyonumuz</span>
+        <h2 class="section-title">Rehbersiz <span>Rehberlik</span></h2>
         <div class="divider"></div>
       </div>
 
       <p class="story-text">
-        Hayatımın en zorlu dönemlerinde <strong>bilinçaltının şifa gücüyle</strong> tanıştım. Uzunca bir süredir QHHT seansları ve astrolojik danışmanlık ile insanların ruhsal yolculuklarına eşlik ediyorum.
+        Büyük önder Mustafa Kemal Atatürk'ün de ömrünün son yıllarında incelediği kadim ezoterik uygarlık Mu'nun bilgeleri, <strong>öğretmek için konuşmazdı; sadece hatırlatırdı</strong>. Çünkü hakikat, dışarıdan öğrenilmezdi. O, zaten içimizdeydi. Çünkü bilge yolu bilen değil; yolun bireyin içinde olduğunu bilen kişidir.
+      </p>
+
+      <p class="story-text">
+        Günümüzde temel sorun bilgi eksikliği değil <strong>bilinç dağınıklığıdır</strong>. Danışmanlık hizmetlerimizle amacımız bireylere çözüm sunmak değil, "rehbersiz rehberlik" kavramını merkeze alarak algının genişlemesine aracı olmaktır. Çözüm bilinç genişlediğinde kendiliğinden ortaya çıkacaktır.
       </p>
 
       <blockquote class="story-quote">
-        "Geleceği şekillendirmenin en iyi yolu onu öngörmektir."
+        "Rehbersiz rehberlik" kavramı, bireyin dışsal bir otoriteye ya da öğreticiye ihtiyaç duymaksızın kendi içsel ışığının farkına varmasını ifade eder.
       </blockquote>
 
       <p class="story-text">
-        Dolores Cannon metodolojisini derinlemesine öğrenerek <strong>QHHT Level I sertifikasını</strong> tamamladım. QHHT şifa tekniği ile astroloji geleneklerini harmanlayan bütüncül bir yaklaşım hedefliyorum.
+        Dışsal otoritenin az olduğu bir düzende, birey kendi kararlarının sonuçlarını daha net görür ve <strong>sorumluluk bilinci güçlenir</strong>. Bu kavram bağımlı bireyler yerine bilinçli ve sorumluluk sahibi bireyleri ön plana çıkarır.
       </p>
-    </div>
-  </div>
 
-  <!-- DEĞERLER -->
-  <div class="reveal">
-    <span class="section-label">Çalışma Felsefem</span>
-    <h2 class="section-title">Benim İçin <span>Önemli Olan</span></h2>
-    <div class="divider"></div>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">🌿</span>
-        <h3 class="value-title">Güvenli Alan</h3>
-        <p class="value-desc">Her danışan için yargısız, sıcak ve güvenli bir ortam yaratmak en temel önceliğimdir. Seans odasında ne kadar güvende hissedilirse içsel yolculuk o kadar derin olur.</p>
+      <p class="story-text">
+        Rehbersiz rehberlik, insanın kendi içsel bilgelik kaynağına güvenmesini teşvik eden sade ama güçlü bir yaklaşımdır. Hem bireysel gelişim hem de toplumsal uyum açısından önemli bir potansiyel taşır. Modern dünyanın hızlı temposu içinde, bu anlayışın sunduğu içsel denge ve farkındalık, insanın kendini daha iyi tanımasına ve daha bilinçli bir yaşam sürmesine yardımcı olabilir.
+      </p>
+
+      <div style="margin-top: 36px;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 400; color: var(--white); margin-bottom: 20px;">Danışmanlık Yaklaşımımız</h3>
+        <ul class="approach-list">
+          <li><strong>Net cevaplar vermekten kaçınırız;</strong> bireyin kendi çözümünü bulmasını teşvik ederiz</li>
+          <li><strong>Bireyin dışa değil içe bakmasını</strong> sağlayan sorularla bilinci hareketlendirir</li>
+          <li><strong>Zihni değil farkındalığı</strong> hedef alırız</li>
+          <li><strong>Bağımlılık değil özgürlüğü</strong> cesaretlendiriz</li>
+        </ul>
       </div>
-      <div class="value-card">
-        <span class="value-icon">🎯</span>
-        <h3 class="value-title">Danışan Odaklılık</h3>
-        <p class="value-desc">Her seans ve her analiz sizin özgün ruhsal yolunuza göre şekillenir. Tek tip yaklaşım yoktur; her bilinç kendine özgü bir derinlikte ele alınır.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">✨</span>
-        <h3 class="value-title">Bütünleşik Yaklaşım</h3>
-        <p class="value-desc">QHHT ve astrolojiyi birlikte kullanarak ruhsal, zihinsel ve enerjetik boyutları bütünleştiriyorum. Parçalar bir araya gelince tablo netleşiyor.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">📚</span>
-        <h3 class="value-title">Sürekli Öğrenme</h3>
-        <p class="value-desc">Bu alanda durmak mümkün değil. Yeni araştırmalar, farklı gelenekler ve her yeni danışan bana her seferinde bir şeyler öğretiyor.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🌍</span>
-        <h3 class="value-title">Evrensel Bağlantı</h3>
-        <p class="value-desc">Her insanın daha büyük bir bütünün parçası olduğuna inanıyorum. Bu bilinçle çalışmak, seans kalitesini temelden etkiliyor.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤝</span>
-        <h3 class="value-title">Gizlilik & Etik</h3>
-        <p class="value-desc">Paylaşılan her bilgi kesinlikle gizli tutulur. Danışanların mahremiyeti ve güveni her şeyden önce gelir.</p>
-      </div>
+
+      <p class="story-text" style="margin-top: 28px;">
+        Bu yaklaşım, yalnızca danışmanlık alanında değil; <strong>liderlik, ebeveynlik ve toplumsal gelişim süreçlerinde de uygulanabilir</strong> bir bilinç modeli sunar. Kendi içsel işığını keşfeden birey, dünyaya da o ışıkla bakma kapasitesi kazanır.
+      </p>
     </div>
   </div>
 
   <!-- CTA -->
   <div class="page-cta reveal">
-    <h2 class="page-cta-title">Ruhsal Yolculuğunuza<br><span>Birlikte Başlayalım</span></h2>
+    <h2 class="page-cta-title">İçsel Yolculuğunuza<br><span>Başlamaya Hazır Mısınız?</span></h2>
     <p>Sorularınız ya da randevu talepleriniz için benimle iletişime geçebilirsiniz.</p>
     <a href="index.html#iletisim" class="btn-primary">✦ Randevu Al</a>
   </div>
