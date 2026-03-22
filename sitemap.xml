@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <!--
   ============================================================
-  sitemap.xml — ageofvibration.com
+  sitemap.xml — titresimcagi.com
   Standart: https://www.sitemaps.org/schemas/sitemap/0.9
   Son güncelleme: 2026-03-05
   ============================================================
@@ -18,7 +18,7 @@
        ANA SAYFA
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/</loc>
+    <loc>https://www.titresimcagi.com/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -28,10 +28,10 @@
     <!-- SEO: og:title: Age Of Vibration | QHHT Uzmanı & Profesyonel Astrolog -->
     <!-- SEO: og:description: Bilinçaltı regresyon terapisi ve astrolojik danışmanlık ile ruhsal yolculuğunuza rehberlik ediyorum. -->
     <!-- SEO: og:type: website | og:locale: tr_TR -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/"/>
     <mobile:mobile/>
     <image:image>
-      <image:loc>https://www.ageofvibration.com/assets/og-cover.jpg</image:loc>
+      <image:loc>https://www.titresimcagi.com/assets/og-cover.jpg</image:loc>
       <image:title>Age Of Vibration — QHHT Uzmanı &amp; Profesyonel Astrolog</image:title>
       <image:caption>Bilinçaltı regresyon terapisi ve astrolojik danışmanlık</image:caption>
     </image:image>
@@ -41,7 +41,7 @@
        HAKKIMDA
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/hakkimda.html</loc>
+    <loc>https://www.titresimcagi.com/hakkimda.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -50,7 +50,7 @@
     <!-- SEO: keywords: QHHT uzmanı, astrolog, Age Of Vibration hakkında, ruhsal yolculuk, eğitim geçmişi -->
     <!-- SEO: og:title: Hakkımda — Age Of Vibration -->
     <!-- SEO: og:description: Eğitim geçmişi, ruhsal yolculuk ve uzmanlık alanları. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/hakkimda.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/hakkimda.html"/>
     <mobile:mobile/>
   </url>
 
@@ -58,7 +58,7 @@
        HİZMETLER — ASTROLOJİ (KATEGORİ SAYFASI)
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/astroloji.html</loc>
+    <loc>https://www.titresimcagi.com/astroloji.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -67,7 +67,7 @@
     <!-- SEO: keywords: astroloji hizmetleri, doğum haritası, sinastri, yıllık öngörü, karmik astroloji, meslek göstergeleri -->
     <!-- SEO: og:title: Astroloji Hizmetleri — Age Of Vibration -->
     <!-- SEO: og:description: Doğum haritası analizi, sinastri, yıllık öngörü ve karmik astroloji danışmanlıkları. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/astroloji.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/astroloji.html"/>
     <mobile:mobile/>
   </url>
 
@@ -75,7 +75,7 @@
        HİZMET — DOĞUM HARİTASI ANALİZİ
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/dogumharitasianalizi.html</loc>
+    <loc>https://www.titresimcagi.com/dogumharitasianalizi.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -84,7 +84,7 @@
     <!-- SEO: keywords: doğum haritası analizi, natal harita, astroloji analizi, kişisel astroloji, gezegen konumları, yükselen burç -->
     <!-- SEO: og:title: Doğum Haritası Analizi — Age Of Vibration -->
     <!-- SEO: og:description: Kişisel özelliklerinizi, yaşam amacınızı ve potansiyelinizi keşfedin. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/dogumharitasianalizi.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/dogumharitasianalizi.html"/>
     <mobile:mobile/>
   </url>
 
@@ -92,7 +92,7 @@
        HİZMET — KARMİK ASTROLOJİ
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/karmikastroloji.html</loc>
+    <loc>https://www.titresimcagi.com/karmikastroloji.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -101,7 +101,7 @@
     <!-- SEO: keywords: karmik astroloji, kuzey düğüm, güney düğüm, chiron, geçmiş yaşam, ruhsal amaç, karma analizi -->
     <!-- SEO: og:title: Karmik Astroloji — Age Of Vibration -->
     <!-- SEO: og:description: Kuzey Düğüm, Güney Düğüm ve Chiron üzerinden ruhun amacını keşfedin. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/karmikastroloji.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/karmikastroloji.html"/>
     <mobile:mobile/>
   </url>
 
@@ -109,7 +109,7 @@
        HİZMET — SİNASTRİ (İLİŞKİ UYUMU)
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/sinastri.html</loc>
+    <loc>https://www.titresimcagi.com/sinastri.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -118,7 +118,7 @@
     <!-- SEO: keywords: sinastri, ilişki uyumu, astroloji uyum, kompozit harita, çift astrolojisi, ilişki analizi, aşk astrolojisi -->
     <!-- SEO: og:title: İlişki Uyumu — Sinastri -->
     <!-- SEO: og:description: İki kişi arasındaki enerjetik uyum ve gerilim noktaları. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/sinastri.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/sinastri.html"/>
     <mobile:mobile/>
   </url>
 
@@ -126,7 +126,7 @@
        HİZMET — MESLEK GÖSTERGELERİ
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/meslekgostergeleri.html</loc>
+    <loc>https://www.titresimcagi.com/meslekgostergeleri.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -135,7 +135,7 @@
     <!-- SEO: keywords: meslek astrolojisi, kariyer astrolojisi, 10. ev, MC midheaven, Satürn, mesleki potansiyel, kariyer analizi -->
     <!-- SEO: og:title: Meslek Göstergeleri — Age Of Vibration -->
     <!-- SEO: og:description: Mesleki potansiyelinizi ve kariyer yolunuzu astrolojiyle keşfedin. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/meslekgostergeleri.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/meslekgostergeleri.html"/>
     <mobile:mobile/>
   </url>
 
@@ -143,7 +143,7 @@
        HİZMET — YILLIK ÖNGÖRÜ
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/yillikongoru.html</loc>
+    <loc>https://www.titresimcagi.com/yillikongoru.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -152,7 +152,7 @@
     <!-- SEO: keywords: yıllık öngörü, solar dönüş haritası, transit analizi, astroloji tahmini, yıllık astroloji, 12 ay analizi -->
     <!-- SEO: og:title: Yıllık Öngörü — Age Of Vibration -->
     <!-- SEO: og:description: Solar dönüş ve transit analiziyle önünüzdeki 12 ayı keşfedin. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/yillikongoru.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/yillikongoru.html"/>
     <mobile:mobile/>
   </url>
 
@@ -160,7 +160,7 @@
        HİZMET — QHHT NEDİR?
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/qhht.html</loc>
+    <loc>https://www.titresimcagi.com/qhht.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -169,7 +169,7 @@
     <!-- SEO: keywords: QHHT nedir, Quantum Healing Hypnosis Technique, bilinçaltı regresyon terapisi, geçmiş yaşam regresyonu, Dolores Cannon, theta dalgası -->
     <!-- SEO: og:title: QHHT Nedir? — Age Of Vibration -->
     <!-- SEO: og:description: Quantum Healing Hypnosis Technique hakkında detaylı bilgi: yöntem, süreç, beklentiler. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/qhht.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/qhht.html"/>
     <mobile:mobile/>
   </url>
 
@@ -177,7 +177,7 @@
        HİZMET — SEANS YOLCULUĞU
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/seans.html</loc>
+    <loc>https://www.titresimcagi.com/seans.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -186,7 +186,7 @@
     <!-- SEO: keywords: QHHT seans, seans hazırlık, astroloji randevu, seans süreci, bilinçaltı seans, seans entegrasyon, randevu al -->
     <!-- SEO: og:title: Seans Yolculuğu — Age Of Vibration -->
     <!-- SEO: og:description: Rezervasyondan entegrasyona kadar seans sürecinin tüm adımları. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/seans.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/seans.html"/>
     <mobile:mobile/>
   </url>
 
@@ -194,7 +194,7 @@
        BLOG
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/blog.html</loc>
+    <loc>https://www.titresimcagi.com/blog.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -203,7 +203,7 @@
     <!-- SEO: keywords: astroloji blog, QHHT yazıları, ruhsal dönüşüm, bilinç gelişimi, astroloji makaleleri, spiritüel blog -->
     <!-- SEO: og:title: Blog — QHHT & Astroloji -->
     <!-- SEO: og:description: Astroloji, QHHT ve ruhsal dönüşüm üzerine derinlemesine yazılar. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/blog.html"/>
     <mobile:mobile/>
   </url>
 
@@ -211,7 +211,7 @@
        SOSYAL MEDYA — INSTAGRAM
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/instagram.html</loc>
+    <loc>https://www.titresimcagi.com/instagram.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -220,10 +220,10 @@
     <!-- SEO: keywords: astroloji instagram, QHHT instagram, ruhsal içerik, astroloji paylaşımları, spiritüel içerik -->
     <!-- SEO: og:title: Instagram — QHHT & Astroloji -->
     <!-- SEO: og:description: Astroloji, QHHT ve ruhsal içerikler. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/instagram.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/instagram.html"/>
     <mobile:mobile/>
     <image:image>
-      <image:loc>https://www.ageofvibration.com/assets/instagram-cover.jpg</image:loc>
+      <image:loc>https://www.titresimcagi.com/assets/instagram-cover.jpg</image:loc>
       <image:title>Instagram — QHHT &amp; Astroloji Paylaşımları</image:title>
       <image:caption>Astroloji, QHHT ve ruhsal içerikler</image:caption>
     </image:image>
@@ -233,7 +233,7 @@
        SOSYAL MEDYA — YOUTUBE
   ══════════════════════════════════════════════════════ -->
   <url>
-    <loc>https://www.ageofvibration.com/youtube.html</loc>
+    <loc>https://www.titresimcagi.com/youtube.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -242,10 +242,10 @@
     <!-- SEO: keywords: astroloji videoları, QHHT videoları, ruhsal gelişim, youtube astroloji, bilinç videoları, spiritüel youtube -->
     <!-- SEO: og:title: YouTube — QHHT & Astroloji -->
     <!-- SEO: og:description: QHHT, astroloji ve ruhsal gelişim videoları. -->
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ageofvibration.com/youtube.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.titresimcagi.com/youtube.html"/>
     <mobile:mobile/>
     <video:video>
-      <video:thumbnail_loc>https://www.ageofvibration.com/assets/youtube-cover.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://www.titresimcagi.com/assets/youtube-cover.jpg</video:thumbnail_loc>
       <video:title>QHHT, Astroloji ve Ruhsal Gelişim Videoları</video:title>
       <video:description>QHHT seansları, astroloji analizleri ve ruhsal dönüşüm üzerine videolar.</video:description>
       <video:player_loc>https://www.youtube.com</video:player_loc>
